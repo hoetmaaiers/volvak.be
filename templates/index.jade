@@ -1,0 +1,26 @@
+extends ./base.jade
+
+
+block content
+
+  section.content-wrapper.projects-wrapper
+    .logo-wrapper
+      img.logo(src="./images/logo.svg", alt="")
+      
+      
+    ul.projects
+      = images
+      each project in collections.projects
+        li.project(style="width: #{project.width}px; height: #{project.height}px")
+          //- h2.project-title
+          //-   = project.title
+          //-   = project.width
+          //-   = project.height
+          
+          
+          .project-gallery
+            ul.project-gallery-list
+              each image in project.images
+                li.project-gallery-list-item(style="background-image: url('" + image + "')")
+                
+i

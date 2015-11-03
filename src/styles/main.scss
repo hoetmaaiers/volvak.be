@@ -1,0 +1,128 @@
+body {
+  background-color: blue;
+}
+/*
+ * mixins
+ */
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+
+/*
+ * Variables
+ */
+$black: #231F20;
+
+
+// Normalize everything
+// @import "../../node_modules/normalize.css/normalize.css";
+
+
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  background-color: $black;
+  font-family: sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+
+
+
+a {
+  color: white;
+  text-decoration: none;
+  @include transition(color 100ms);
+
+  &:hover {
+    // text-decoration: underline;
+    color: darken(white, 50%);
+  }
+}
+
+h1 {
+  font-size: 3em;
+}
+
+
+
+.main-wrapper {
+  padding: 40px;
+}
+
+.logo-wrapper {
+  width: 100%;
+  padding: 0 0 20px;
+  border-bottom: 3px solid white;
+}
+
+.logo {
+  width: 80px;
+}
+
+.projects {
+  color: white;
+  list-style: none;
+  margin: 0;
+  padding: 40px 0;
+  // padding-top: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+  float: left;
+  width: 200px;
+  height: 300px;
+}
+
+.project-gallery {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.project-gallery-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  @include transform(translateY(0));
+  @include transition-property(transform);
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-in);
+
+  @include clearfix;
+}
+
+.project-gallery-list-item {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.footer {
+  // padding-top: 20px;
+}
+
+.footer-navigation {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

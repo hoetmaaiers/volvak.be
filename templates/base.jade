@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet')
+    //- link(href='./css/main.css', rel='stylesheet')
+
+    block title
+      title Default title
+      
+    script(src='http://localhost:35729/livereload.js')
+    script(src='scripts/bundle.js')
+    
+  body
+    div.main-wrapper
+      block content
+      
+      
+      section.footer
+        nav.footer-navigation
+          ul
+            li 
+             a(href="index.html") vak
+            li 
+              a(href="contact.html") contact
+            li
+              a(href="") facebook
