@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Kurkuma
 template: project.jade
 date: 1988-12-23
 width: 200

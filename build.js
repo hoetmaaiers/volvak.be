@@ -16,8 +16,9 @@ var m = Metalsmith(__dirname)
       collections({
         projects: {
           pattern: 'projects/*/*.md',
-          sortBy: 'date:desc',
-          resverse: false,
+          sortBy: 'title',
+          // reverse: true
+          reverse: false
         }
       })
     )
@@ -58,7 +59,7 @@ var m = Metalsmith(__dirname)
     .use(watch({
       paths: {
         "${source}/**/*": true,
-        "templates/**/*": "**/*.md",
+        // "templates/**/*": "**/*.md",
         "app/scripts/**/*.js": "**/*.js",
       },
       livereload: true,

@@ -1,8 +1,8 @@
 ---
-title: Hello World
+title: Rozemarijn
 template: project.jade
 date: 1988-12-23
-width: 200
+width: 400
 height: 300
 ---
 # World

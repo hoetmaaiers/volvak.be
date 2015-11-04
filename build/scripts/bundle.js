@@ -62,11 +62,11 @@
 	  // console.log($('.projects')[0]);
 	  var grid = document.querySelector('.projects');
 
-	  var msnry = new Masonry(grid, {
-	    itemSelector: '.project',
-	    columnWidth: 100,
-	    gutter: 20
-	  });
+	  // var msnry = new Masonry(grid, {
+	  //   itemSelector: '.project',
+	  //   columnWidth: 100,
+	  //   gutter: 20,
+	  // });
 
 	  $('.project-gallery').each(function (i, el) {
 	    var slider = new GallerySlider(el);
@@ -9675,7 +9675,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: blue; }\n\n/*\n * mixins\n */\n/*\n * Variables\n */\n* {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box; }\n\nbody {\n  background-color: #231F20;\n  font-family: sans-serif;\n  color: white;\n  font-size: 16px; }\n\na {\n  color: white;\n  text-decoration: none;\n  -webkit-transition: color 100ms;\n  -moz-transition: color 100ms;\n  transition: color 100ms; }\n  a:hover {\n    color: gray; }\n\nh1 {\n  font-size: 3em; }\n\n.main-wrapper {\n  padding: 40px; }\n\n.logo-wrapper {\n  width: 100%;\n  padding: 0 0 20px;\n  border-bottom: 3px solid white; }\n\n.logo {\n  width: 80px; }\n\n.projects {\n  color: white;\n  list-style: none;\n  margin: 0;\n  padding: 40px 0; }\n\n.project {\n  margin-bottom: 20px;\n  float: left;\n  width: 200px;\n  height: 300px; }\n\n.project-gallery {\n  position: relative;\n  overflow: hidden;\n  display: block;\n  width: 100%;\n  height: 100%; }\n\n.project-gallery-list {\n  width: 100%;\n  height: 100%;\n  padding: 0;\n  -webkit-transform: translateY(0);\n  -moz-transform: translateY(0);\n  -ms-transform: translateY(0);\n  -o-transform: translateY(0);\n  transform: translateY(0);\n  -webkit-transition-property: -webkit-transform;\n  -moz-transition-property: -moz-transform;\n  transition-property: transform;\n  -webkit-transition-duration: 300ms;\n  -moz-transition-duration: 300ms;\n  transition-duration: 300ms;\n  -webkit-transition-timing-function: ease-in;\n  -moz-transition-timing-function: ease-in;\n  transition-timing-function: ease-in; }\n  .project-gallery-list::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n\n.project-gallery-list-item {\n  position: relative;\n  display: block;\n  float: left;\n  width: 100%;\n  height: 100%;\n  background-size: cover; }\n\n.footer-navigation ul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\n.footer-navigation li {\n  display: inline-block;\n  margin-right: 20px; }\n  .footer-navigation li:last-child {\n    margin-right: 0; }\n", ""]);
+	exports.push([module.id, "body {\n  background-color: blue; }\n\n/*\n * mixins\n */\n/*\n * Variables\n */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background-color: #231F20;\n  font-family: sans-serif;\n  color: white;\n  font-size: 16px; }\n\na {\n  color: white;\n  text-decoration: none;\n  -webkit-transition: color 100ms;\n  -moz-transition: color 100ms;\n  transition: color 100ms; }\n  a:hover {\n    color: gray; }\n\nh1 {\n  font-size: 2em; }\n\n.main-wrapper {\n  padding: 40px; }\n\n.logo-wrapper {\n  width: 100%;\n  padding: 0 0 20px;\n  border-bottom: 3px solid white; }\n\n.content-wrapper {\n  padding-bottom: 40px; }\n\n.logo {\n  width: 80px; }\n\n.footer-navigation ul {\n  padding: 0;\n  margin: 0; }\n\n.footer-navigation li {\n  display: inline-block;\n  margin-right: 20px; }\n  .footer-navigation li:last-child {\n    margin-right: 0; }\n\n.clearfix::after {\n  clear: both;\n  content: \"\";\n  display: table; }\n\n.projects {\n  color: white;\n  list-style: none;\n  margin: 0;\n  padding: 40px 0; }\n\n.project {\n  margin-bottom: 40px;\n  margin-right: 40px;\n  float: left;\n  width: 200px;\n  height: 300px; }\n\n.project-gallery {\n  position: relative;\n  overflow: hidden;\n  display: block;\n  width: 100%;\n  height: 100%; }\n\n.project-gallery-list {\n  width: 100%;\n  height: 100%;\n  padding: 0;\n  -webkit-transform: translateY(0);\n  -moz-transform: translateY(0);\n  -ms-transform: translateY(0);\n  -o-transform: translateY(0);\n  transform: translateY(0);\n  -webkit-transition-property: -webkit-transform;\n  -moz-transition-property: -moz-transform;\n  transition-property: transform;\n  -webkit-transition-duration: 300ms;\n  -moz-transition-duration: 300ms;\n  transition-duration: 300ms;\n  -webkit-transition-timing-function: ease-in;\n  -moz-transition-timing-function: ease-in;\n  transition-timing-function: ease-in; }\n  .project-gallery-list::after {\n    clear: both;\n    content: \"\";\n    display: table; }\n\n.project-gallery-list-item {\n  position: relative;\n  display: block;\n  float: left;\n  width: 100%;\n  height: 100%;\n  background-size: cover; }\n", ""]);
 
 	// exports
 

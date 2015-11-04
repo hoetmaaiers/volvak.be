@@ -8,19 +8,15 @@ block content
       img.logo(src="./images/logo.svg", alt="")
       
       
-    ul.projects
+    ol.projects.clearfix
       = images
       each project in collections.projects
+        //- li
+          //- h1= project.title
+          //- = project.images.length
         li.project(style="width: #{project.width}px; height: #{project.height}px")
-          //- h2.project-title
-          //-   = project.title
-          //-   = project.width
-          //-   = project.height
-          
-          
           .project-gallery
             ul.project-gallery-list
               each image in project.images
                 li.project-gallery-list-item(style="background-image: url('" + image + "')")
                 
-i

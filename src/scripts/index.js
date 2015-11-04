@@ -11,11 +11,11 @@ $(document).ready(function() {
   // console.log($('.projects')[0]);
   var grid = document.querySelector('.projects')
 
-  var msnry = new Masonry(grid, {
-    itemSelector: '.project',
-    columnWidth: 100,
-    gutter: 20,
-  })
+  // var msnry = new Masonry(grid, {
+  //   itemSelector: '.project',
+  //   columnWidth: 100,
+  //   gutter: 20,
+  // });
 
   $('.project-gallery').each(function(i, el) {
     var slider = new GallerySlider(el);

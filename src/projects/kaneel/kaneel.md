@@ -1,8 +1,8 @@
 ---
-title: Hello Heuvel
+title: Kaneel
 template: project.jade
-date: 2987-12-28
-width: 200
+date: 1987-12-28
+width: 100
 height: 150
 ---
 Hi, this is hello. HELLOo
