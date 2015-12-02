@@ -1,12 +1,9 @@
 ---
 title: Rozemarijn
-template: project.jade
 date: 1988-12-23
-width: 400
-height: 300
+width: 300
+height: 225
 ---
 # World
 
 WorldWorldWorldWorldWorldWorldWorld WorldWorldWorldWorldWorldWorldWorld WorldWorldWorldWorldWorldWorldWorld WorldWorldWorldWorldWorldWorldWorld
-
-![Taketori Monogatari](1.jpeg)

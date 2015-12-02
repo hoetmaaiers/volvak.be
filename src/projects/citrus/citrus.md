@@ -1,9 +1,9 @@
 ---
 title: Citrus
-template: project.jade
+draft: false
 date: 1987-12-28
 width: 300
-height: 150
+height: 200
 ---
 Hi, this is hello. HELLOo
 

@@ -1,6 +1,6 @@
 ---
 title: Kaneel
-template: project.jade
+draft: true
 date: 1987-12-28
 width: 400
 height: 250

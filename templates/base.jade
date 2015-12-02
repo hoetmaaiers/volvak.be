@@ -2,25 +2,31 @@ doctype html
 html(lang="en")
   head
     link(rel='stylesheet')
-    //- link(href='./css/main.css', rel='stylesheet')
 
     block title
-      title Default title
+      title Kenny Vanaelst
+    
+    meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1")
       
     script(src='http://localhost:35729/livereload.js')
     script(src='scripts/bundle.js')
     
   body
     div.main-wrapper
-      block content
       
-      
-      section.footer
-        nav.footer-navigation
+      header.main-header
+        a.main-logo(href="contact.html")
+          img(src="./images/logo.svg", alt="")
+        
+        nav.main-navigation
           ul
             li 
-             a(href="index.html") vak
-            li 
-              a(href="contact.html") contact
+             a(href="mailto:kennyvanaelst@telenet.be") mail
             li
-              a(href="") facebook
+              a(href="http://www.facebook.com", target="_blank") facebook
+
+            
+            
+            
+      
+      block content

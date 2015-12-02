@@ -1,0 +1,9 @@
+// Normalize everything
+@import "../../node_modules/normalize.css/normalize.css";
+
+// add a bourbon helping hand
+@import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+.clearfix {
+  @include clearfix;
+}

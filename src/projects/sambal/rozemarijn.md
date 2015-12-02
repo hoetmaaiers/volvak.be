@@ -1,12 +1,9 @@
 ---
-title: Kurkuma
-draft: true
+title: Rozemarijn
 date: 1988-12-23
-width: 200
-height: 300
+width: 730
+height: 548
 ---
 # World
 
 WorldWorldWorldWorldWorldWorldWorld WorldWorldWorldWorldWorldWorldWorld WorldWorldWorldWorldWorldWorldWorld WorldWorldWorldWorldWorldWorldWorld
-
-![Taketori Monogatari](1.jpeg)

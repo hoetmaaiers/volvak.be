@@ -3,6 +3,7 @@ var Metalsmith = require('metalsmith'),
     templates = require('metalsmith-templates'),
     markdown = require('metalsmith-markdown'),
     sass = require('metalsmith-sass'),
+    drafts = require('metalsmith-drafts'),
     collections = require('metalsmith-collections'),
     images = require('metalsmith-project-images'),
     serve = require('metalsmith-serve'),
@@ -12,25 +13,21 @@ var Metalsmith = require('metalsmith'),
 
 var m = Metalsmith(__dirname)
     .clean(true)
+    .use(drafts())
     .use(
       collections({
         projects: {
           pattern: 'projects/*/*.md',
           sortBy: 'title',
-          // reverse: true
           reverse: false
         }
       })
     )
-    .use(images({
-      pattern: 'projects/**/*.md'
-    }))
+    .use(images({ pattern: 'projects/**/*.md' }))
     .use(markdown())
-    .use(templates({
-      engine: 'jade',
-      }))
+    .use(templates({ engine: 'jade' }))
     .use(webpack({
-      context: path.resolve(__dirname, './src/scripts/'),
+      context: path.resolve(__dirname, './templates/scripts/'),
       entry: './index.js',
       output: {
         path: path.resolve(__dirname, './build/scripts/'),
@@ -52,15 +49,17 @@ var m = Metalsmith(__dirname)
         resolve: {
           extensions: ['', '.js', '.jsx']
         }
-      }
+      },
+      devtool: 'source-map'
     }))
     .destination('./build')
-    .use(serve({}))
+    .use(serve({ host: '0.0.0.0' }))
     .use(watch({
       paths: {
         "${source}/**/*": true,
+        "templates/scripts/**/*.js": "**/*.js",
+        "templates/styles/**/*.scss": "**/*.scss",
         // "templates/**/*": "**/*.md",
-        "app/scripts/**/*.js": "**/*.js",
       },
       livereload: true,
     }))

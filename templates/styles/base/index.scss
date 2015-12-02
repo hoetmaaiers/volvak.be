@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $black;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  color: white;
+
+  font-size: 14px;
+
+  @media(min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  @include transition(color 100ms);
+
+  &:hover {
+    color: darken(white, 50%);
+  }
+}
+
+h1 {
+  font-size: 2em;
+}
+
+strong {
+  font-weight: bold;
+}

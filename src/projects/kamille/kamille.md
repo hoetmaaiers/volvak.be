@@ -1,6 +1,6 @@
 ---
 title: Kamille
-template: project.jade
+draft: true
 date: 2987-12-28
 width: 200
 height: 150

@@ -2,6 +2,4 @@
 title: Home
 template: index.jade
 ---
-Hi, this is my start page; neat ain't it? ;)))
-
-### Some infooo!
+At this moment I am not shown on the index page.s
