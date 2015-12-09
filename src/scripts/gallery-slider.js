@@ -41,8 +41,9 @@ export default function GallerySlider(element) {
 
 
   function goToItem(index) {
-    var list = this.$element.find('.project-gallery-list');
-    var translationY = this.$element.height() * index;
+    let list = this.$element.find('.project-gallery-list'),
+        translationY = this.$element.height() * index;
+        
     list.css('transform', 'translateY(-' + translationY  + 'px)');
   }
 }

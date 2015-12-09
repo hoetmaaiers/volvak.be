@@ -1,20 +1,14 @@
 require('style!css!normalize.css/normalize.css');
 require('style!css!sass!../styles/main.scss');
-// require('style!css!sass!./style.scss');
 
-var $ = window.$ = require('jquery');
-var Masonry = require('masonry-layout/dist/masonry.pkgd.js');
-// var GallerySlider = require('./gallery-slider-infinite.js');
+
 import GallerySlider from './gallery-slider-infinite.js'
 
 $(document).ready(function() {
   resizeProjects();
 
-  var gallerySliders = [];
-
   $('.project-gallery').each(function(i, el) {
-    var slider = new GallerySlider(el);
-    gallerySliders.push(slider);
+    new GallerySlider(el);
   });
 
   // toggle logo href handle

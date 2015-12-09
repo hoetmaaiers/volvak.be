@@ -3,14 +3,13 @@ const flow = require('./build-configuration.js');
 const serve = require('metalsmith-serve'),
       watch = require('metalsmith-watch');
 
-
 flow
   .use(serve({ host: '0.0.0.0' }))
   .use(watch({
     paths: {
       "${source}/**/*": true,
-      "./templates/scripts/**/*.js": "**/*.js",
-      "./templates/styles/**/*.scss": "**/*.scss",
+      "scripts/**/*.js": "scripts/**/*.js",
+      "styles/**/*.scss": "styles/**/*.scss",
     },
     livereload: true,
   }))

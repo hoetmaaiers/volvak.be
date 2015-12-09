@@ -70,10 +70,6 @@ export default class GallerySlider {
       }
 
     })
-
-    // this.$element.on('click', function() {
-    //   this.goToNextItem()
-    // }.bind(this))
   }
 
 }
