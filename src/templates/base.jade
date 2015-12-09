@@ -16,7 +16,7 @@ html(lang="en")
       
       header.main-header
         a.main-logo(href="contact.html")
-          img(src="./images/logo.svg", alt="")
+          img(src="./images/logo.svg", alt="", style="width: #{settings.logo.width}; height: #{settings.logo.height}")
         
         nav.main-navigation
           ul
@@ -28,5 +28,5 @@ html(lang="en")
             
             
             
-      
-      block content
+      section.content-wrapper(style="padding-top: #{settings.logo.height}")    
+        block content

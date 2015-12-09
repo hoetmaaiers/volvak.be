@@ -2,15 +2,12 @@ extends ./base.jade
 
 
 block content
-
-  section.content-wrapper.projects-wrapper      
-
-    ol.projects.clearfix
-      = images
-      each project in collections.projects
-        
-        li.project(style="width: #{project.width}px; height: #{project.height}px" data-width="#{project.width}" data-height="#{project.height}")
-          .project-gallery
-            ul.project-gallery-list
-              each image in project.images
-                li.project-gallery-list-item(style="background-image: url('" + image + "')")
+  ol.projects.clearfix
+    = images
+    each project in collections.projects
+      
+      li.project(style="width: #{project.width}px; height: #{project.height}px" data-width="#{project.width}" data-height="#{project.height}")
+        .project-gallery
+          ul.project-gallery-list
+            each image in project.images
+              li.project-gallery-list-item(style="background-image: url('#{image}')")
