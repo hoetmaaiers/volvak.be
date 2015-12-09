@@ -6,7 +6,7 @@ export default class GallerySlider {
     this.nextIndex = 1;
     this.$element  = $(element);
     this.items     = this.$element.find('.project-gallery-list-item').map(function(i, item) {
-      return $(item).css('background-image')
+      return $(item).css('background-image');
     })
 
     // start event listeners
@@ -34,7 +34,7 @@ export default class GallerySlider {
     // make next -> current
     this.$infiniteElement.find('.-next').removeClass('-next').addClass('-current');
     // add new next
-    $(this._getNextItem()).appendTo(this.$infiniteElement);
+    this._getNextItem().appendTo(this.$infiniteElement);
   }
 
   /**
@@ -42,7 +42,9 @@ export default class GallerySlider {
    * @param classes {array}
    */
   _getItem(imageUrl, classes) {
-    return `<li class="project-gallery-list-item ${classes.join(' ')}" style="background-image: ${imageUrl}"></li>`;
+    return $('<li class="project-gallery-list-item">')
+      .css('background-image', imageUrl)
+      .addClass(classes.join(" "));
   }
 
 
