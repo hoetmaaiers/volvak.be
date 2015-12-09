@@ -1,5 +1,5 @@
 .projects {
-  color: white;
+  color: $text-color;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,14 +34,12 @@
 .project-gallery-list-item {
   position: absolute;
   display: block;
-  // float: left;
   width: 100%;
   height: 100%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   @include transform(translateY(0) translate3d(0,0,0));
-  // @include transform(translateY(0));
   @include transition-property(transform);
   @include transition-duration(500ms);
   @include transition-timing-function(ease-out);

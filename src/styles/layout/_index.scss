@@ -37,7 +37,7 @@
   @include transition(all 150ms ease-out);
 
   &:hover {
-    @include transform(scale(1.1) rotate(-5deg));
+    @include transform(scale(1.15));
   }
 
   > img {
