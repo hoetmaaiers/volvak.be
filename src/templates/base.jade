@@ -16,10 +16,12 @@ html(lang="en")
       
       header.main-header
         a.main-logo(href="contact.html")
-          img(src="./images/logo.svg", alt="", style="width: #{settings.logo.width}; height: #{settings.logo.height}")
+          img(src="./images/logo.png", alt="", style="width: #{settings.logo.width}; height: #{settings.logo.height}")
         
         nav.main-navigation
           ul
+            li(style="width: #{settings.logo.width}")
+              //- dummy
             li 
              a(href="mailto:#{settings.email}") mail
             li
@@ -28,5 +30,5 @@ html(lang="en")
             
             
             
-      section.content-wrapper(style="padding-top: #{settings.logo.height}")    
+      section.content-wrapper(style="padding-top: #{settings.logo.height}; padding-top: calc(#{settings.logo.height} + 20px)")    
         block content

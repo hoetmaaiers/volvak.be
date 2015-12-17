@@ -1,5 +1,9 @@
 .main-wrapper {
-  padding: 40px;
+  padding: 20px;
+
+  @media (min-width: $screen-md-min) {
+    padding: 40px;
+  }
 }
 
 .content-wrapper {
@@ -12,7 +16,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 40px;
+  padding: 40px 20px;
   display: block;
   width: 100%;
   height: auto;
@@ -20,29 +24,27 @@
   z-index: 99999;
   pointer-events: visible;
 
+  @media (min-width: $screen-md-min) {
+    padding: 40px;
+  }
+
   > .main-logo {
-    position: absolute;
-    width: 300px;
+    position: relative;
+    width: auto;
     display: block;
     float: left;
   }
 
   > .main-navigation {
+    position: absolute;
+    left: 0;
     display: block;
     float: left;
-    width: calc(100% - 80px);
-  }
-}
-
-.main-logo {
-  width: 80px;
-  @include transition(all 150ms ease-out);
-
-  &:hover {
-    @include transform(scale(1.15));
-  }
-
-  > img {
     width: 100%;
+    padding: 0 20px;
+
+    @media (min-width: $screen-md-min) {
+      padding: 0 40px;
+    }
   }
 }

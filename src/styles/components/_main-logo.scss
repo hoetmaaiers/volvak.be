@@ -1,0 +1,13 @@
+.main-logo {
+  width: 80px;
+  @include transition(all 150ms ease-out);
+  @include transform-origin(center center);
+
+  &:hover {
+    @include transform(scale(1.05));
+  }
+
+  > img {
+    width: 100%;
+  }
+}
