@@ -19,13 +19,12 @@ html(lang="en")
           img(src="./images/logo.png", alt="", style="width: #{settings.logo.width}; height: #{settings.logo.height}")
         
         nav.main-navigation
-          ul
-            li(style="width: #{settings.logo.width}")
-              //- dummy
-            li 
-             a(href="mailto:#{settings.email}") mail
-            li
-              a(href=settings.facebook, target="_blank") facebook
+          a.nav-item(href="mailto:#{settings.email}") 
+            img(src="./images/social/volvak_icon_mail.png", alt="Volvak email" )
+          a.nav-item(href=settings.facebook, target="_blank")
+            img(src="./images/social/volvak_icon_facebook.png", alt="Volvak Facebook" )
+          a.nav-item(href=settings.instagram, target="_blank")
+            img(src="./images/social/volvak_icon_instagram.png", alt="Volvak Instagram" )
 
             
             

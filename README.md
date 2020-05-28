@@ -1,7 +1,10 @@
 ## Install
 
-```shell
+````shell
 npm install
+
+# install on modern system expecting old architecture
+CXXFLAGS="-mmacosx-version-min=10.9" LDFLAGS="-mmacosx-version-min=10.9" npm install
 ``
 
 ## Npm run cripts
@@ -15,12 +18,13 @@ npm run build:dev
 
 # deploy /build folder
 npm run deploy
-```
-
+````
 
 ## Node scripts GUI
 
 Run above scripts in a GUI.
+
 ```shell
 nsg
 ``
+```
