@@ -13,6 +13,7 @@
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "metalsmith-drafts": "0.0.1",
+    "metalsmith-metadata": "0.0.4",
     "metalsmith-project-images": "1.0.1",
     "metalsmith-webpack": "^1.0.1",
     "normalize.css": "^3.0.3"

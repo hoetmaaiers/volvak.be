@@ -4,7 +4,7 @@ var fs = require( 'vinyl-fs' ),
 var conn = new ftp({
   host:     'users.telenet.be',
   user:     'w225685',
-  password: 'xxxxxxx',
+  password: 'Berber10',
   log:      console.log
 });
 
