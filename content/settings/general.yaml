@@ -2,6 +2,10 @@ facebook: 'https://www.facebook.com/studiovolvak/'
 instagram: 'https://www.instagram.com/studiovolvak/'
 email: 'info@volvak.be'
 title: 'volvak'
+logoMobile:
+  width: '82px'
+  height: '82px'
+
 logo:
   width: '248px'
   height: '82px'

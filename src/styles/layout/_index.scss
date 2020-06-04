@@ -47,23 +47,40 @@
     > img {
       width: 100%;
     }
+
+    .logo {
+      display: none;
+    }
+
+    @media (min-width: $screen-md-min) {
+      .logo-mobile {
+        display: none;
+      }
+      .logo {
+        display: block;
+      }
+    }
   }
 
   > .main-navigation {
-    padding: 0 20px;
+    padding: 0;
 
     @media (min-width: $screen-md-min) {
       padding: 0 40px;
     }
 
     .nav-item {
-      margin-left: 20px;
+      margin-left: 10px;
       display: inline-block;
       @include transition(all 150ms ease-out);
       @include transform-origin(center center);
 
       &:hover {
         @include transform(scale(1.1));
+      }
+
+      @media (min-width: $screen-md-min) {
+        margin-left: 20px;
       }
     }
 
